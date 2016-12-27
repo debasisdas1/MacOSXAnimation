@@ -74,6 +74,16 @@
     
 }
 
+-(IBAction)changeAll:(id)sender{
+    [self changeColor:self];
+    [self changeBorderWidth:self];
+    [self changeSize:self];
+    [self changeCornerRadius:self];
+    [self changeOpacity:self];
+    [self toggleShadow:self];
+    
+}
+
 float randFloat() {
     return (random() % 1001) / 1000.0f;
 }
